@@ -1,0 +1,51 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background: linear-gradient(rgb(127, 127, 184), rgb(211, 108, 108), rgb(192, 192, 41), rgb(245, 190, 87));
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#board {
+    background: linear-gradient(rgb(37, 190, 106), rgb(20, 155, 65), rgb(5, 97, 62));
+    width: 80vmin;
+    height: 82vmin;
+    border: 2px solid rgb(223, 210, 212);
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+    /*18 by 18 grid*/
+}
+
+.head {
+    background: linear-gradient(rgb(204, 207, 29), rgb(137, 165, 58), rgb(119, 218, 54));
+    border: 2px solid white;
+    border-radius: 9px;
+    transform: scale(1.2);
+}
+
+.snake {
+    background: linear-gradient(rgb(49, 46, 46), rgb(75, 70, 70), rgb(146, 142, 142));
+    border: .25vmin solid white;
+    transform: scale(.8);
+    border-radius: 5px;
+}
+
+.food {
+    background: linear-gradient(red, rgb(199, 41, 41), rgb(122, 88, 88));
+    border: .25vmin solid white;
+    border-radius: 8px;
+}
+
+#scoree {
+    font-size: 39px;
+    font-weight: bold;
+}
